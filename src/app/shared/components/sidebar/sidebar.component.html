@@ -1,0 +1,14 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+  <h4 class="text-light">Gifs App</h4>
+  <h5 class="text-light">by rferreira</h5>
+  <hr class="text-white" />
+  <div class="list-group list-reset">
+    <button
+      (click)="onSelectTag(tag)"
+      class="list-group-item list-group-item-action"
+      *ngFor="let tag of tags"
+    >
+      {{ tag | titlecase }}
+    </button>
+  </div>
+</div>
